@@ -1,0 +1,19 @@
+<h1>Homepage of the image recognition system</h1>
+
+<p>
+    This system containes the following functions:
+</p>
+<ul>
+    <li>
+        Obeject Detection
+    </li>
+    <li>Generic Image Classification</li>
+    <li>Fine-grained Image Classification</li>
+</ul>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Submit" />
+</form>
